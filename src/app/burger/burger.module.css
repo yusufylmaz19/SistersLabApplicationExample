@@ -8,25 +8,34 @@
 }
 
 .nav {
+  margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 20px;
 }
 
 .bTop {
   position: relative;
   background-color: var(--breadTop);
   width: 380px;
-  height: 120px;
+  height: 115px;
   margin: 0 auto;
   border-top-left-radius: 150px;
   border-top-right-radius: 150px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 10px solid var(--edge);
-  z-index: 10;
+  z-index: 8;
+}
+
+.bun {
+  position: absolute;
+  background-color: var(--edge);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .bBottom {
@@ -46,92 +55,76 @@
   margin: 0 auto;
   border-radius: 50px;
   border: 10px solid var(--edge);
-  z-index: 6;
+  z-index: 5;
 }
 
-.lettuce {
+.lettuce,
+.cheese {
   position: relative;
 }
 
 .lettuce1 {
   position: absolute;
-  background-color: var(--lettuce);
   height: 120px;
-  width: 50px;
-  top: -52px;
+  width: 60px;
   left: 80px;
+  top: -50px;
   transform: rotate(65deg);
+  z-index: 4;
   border-radius: 50px;
-  z-index: 5;
+  background-color: var(--lettuce);
 }
 
 .lettuce2 {
   position: absolute;
-  background-color: var(--lettuce);
   height: 120px;
-  width: 50px;
-  top: -52px;
+  width: 60px;
   right: 80px;
+  top: -50px;
   transform: rotate(-65deg);
+  z-index: 4;
   border-radius: 50px;
-  z-index: 5;
+  background-color: var(--lettuce);
 }
 
 .lettuce3 {
   position: absolute;
-  height: 55px;
+  height: 60px;
   width: 270px;
-  background-color: var(--lettuce);
-  border-radius: 50px;
-  top: 47%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5;
-}
-
-.cheese {
-  position: relative;
-  top: 78px;
-  z-index: 7;
+  z-index: 3;
+  border-radius: 50px;
+  background-color: var(--lettuce);
 }
 
 .cheese1 {
   position: absolute;
-  background-color: var(--breadTop);
-  width: 50px;
   height: 50px;
+  width: 60px;
+  top: -75px;
+  left: 130px;
+  transform: rotate(45deg);
   z-index: 5;
-  left: 80px;
-  transform: rotate(-45deg);
-  border-left: 10px solid var(--edge);
-  border-bottom: 10px solid var(--edge);
+  border: 10px solid var(--edge);
+  background-color: var(--breadTop);
 }
-
 .cheese2 {
   position: absolute;
-  background-color: var(--breadTop);
-  width: 50px;
   height: 50px;
+  width: 60px;
+  top: -75px;
+  right: 130px;
+  transform: rotate(45deg);
   z-index: 5;
-  right: 80px;
-  transform: rotate(-45deg);
-  border-left: 10px solid var(--edge);
-  border-bottom: 10px solid var(--edge);
+  border: 10px solid var(--edge);
+  background-color: var(--breadTop);
 }
 
 .flexRow {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-
-.bun {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--edge);
-  z-index: 15;
-  cursor: pointer;
+  gap: 5px;
 }

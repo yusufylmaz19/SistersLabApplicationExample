@@ -34,8 +34,6 @@ export default function burger() {
     setToalPrice(updatedPrice);
   });
 
-
-
   return (
     domLoaded && (
       <div className={styles.box}>
@@ -49,12 +47,9 @@ export default function burger() {
           checkedMeat={checkedMeat}
           setBunCount={setBunCount}
         />
-        <BreadTop
-          bunCount={bunCount}
-          setBunCount={setBunCount}
-          checkedCheese={checkedCheese}
-        />
+        <BreadTop bunCount={bunCount} setBunCount={setBunCount} />
         {checkedMeat && <Meat />}
+        {checkedCheese && <Cheese />}
         {checkedLettuce && <Lettuce />}
         <BreadBottom />
       </div>

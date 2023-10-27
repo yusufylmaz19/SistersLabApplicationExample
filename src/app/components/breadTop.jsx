@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "../burger/burger.module.css";
-import Cheese from "./cheese";
 
-export default function BreadTop({ bunCount, setBunCount, checkedCheese }) {
+export default function BreadTop({ bunCount, setBunCount }) {
   const [bunPositons, setBunPositons] = useState([]);
-  const [cheese, setCheese] = useState(false);
 
   useEffect(() => {
     setBunPositons((prevBunPosition) => {
@@ -22,12 +20,6 @@ export default function BreadTop({ bunCount, setBunCount, checkedCheese }) {
     });
   }, [bunCount]);
 
-  useEffect(() => {
-    setCheese(checkedCheese);
-  }, [checkedCheese]);
-
-  console.log(checkedCheese);
-
   const removeItemFromBuns = (index) => {
     setBunPositons((prevPos) => prevPos.filter((_, i) => i !== index));
     setBunCount((prevBunCount) => prevBunCount - 1);
@@ -35,7 +27,6 @@ export default function BreadTop({ bunCount, setBunCount, checkedCheese }) {
 
   return (
     <div className={styles.bTop}>
-      {cheese && <Cheese />}
       {bunPositons.map((pos, index) => (
         <Bun
           key={index}

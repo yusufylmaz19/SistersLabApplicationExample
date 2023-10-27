@@ -38,7 +38,7 @@ export default function HamburgerNav({
         <input
           type="checkbox"
           value={checkedCheese}
-          onChange={(e) => setChekedCheese(!checkedLettuce)}
+          onChange={(e) => setChekedCheese(!checkedCheese)}
         />
       </div>
     </div>
