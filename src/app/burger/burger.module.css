@@ -1,0 +1,137 @@
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.bTop {
+  position: relative;
+  background-color: var(--breadTop);
+  width: 380px;
+  height: 120px;
+  margin: 0 auto;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 10px solid var(--edge);
+  z-index: 10;
+}
+
+.bBottom {
+  background-color: var(--breadBottom);
+  width: 380px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 10px solid var(--edge);
+}
+
+.meat {
+  position: relative;
+  background-color: var(--meat);
+  width: 380px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 10px solid var(--edge);
+  z-index: 6;
+}
+
+.lettuce {
+  position: relative;
+}
+
+.lettuce1 {
+  position: absolute;
+  background-color: var(--lettuce);
+  height: 120px;
+  width: 50px;
+  top: -52px;
+  left: 80px;
+  transform: rotate(65deg);
+  border-radius: 50px;
+  z-index: 5;
+}
+
+.lettuce2 {
+  position: absolute;
+  background-color: var(--lettuce);
+  height: 120px;
+  width: 50px;
+  top: -52px;
+  right: 80px;
+  transform: rotate(-65deg);
+  border-radius: 50px;
+  z-index: 5;
+}
+
+.lettuce3 {
+  position: absolute;
+  height: 55px;
+  width: 270px;
+  background-color: var(--lettuce);
+  border-radius: 50px;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.cheese {
+  position: relative;
+  top: 78px;
+  z-index: 7;
+}
+
+.cheese1 {
+  position: absolute;
+  background-color: var(--breadTop);
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  left: 80px;
+  transform: rotate(-45deg);
+  border-left: 10px solid var(--edge);
+  border-bottom: 10px solid var(--edge);
+}
+
+.cheese2 {
+  position: absolute;
+  background-color: var(--breadTop);
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  right: 80px;
+  transform: rotate(-45deg);
+  border-left: 10px solid var(--edge);
+  border-bottom: 10px solid var(--edge);
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bun {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--edge);
+  z-index: 15;
+  cursor: pointer;
+}
