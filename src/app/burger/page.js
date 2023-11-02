@@ -8,7 +8,7 @@ import Lettuce from "../components/lettuce";
 import Cheese from "../components/cheese";
 import Meat from "../components/meat";
 
-export default function burger() {
+export default function Burger() {
   const [domLoaded, setDomLoaded] = useState(false);
   const [checkedMeat, setChekedMeat] = useState(false);
   const [checkedLettuce, setChekedLettuce] = useState(false);
