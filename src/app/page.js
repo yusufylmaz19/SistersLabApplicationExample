@@ -13,6 +13,7 @@ export default function Home() {
       <a href="/useEffect/counter">Counter App</a>
       <a href="/useEffect/mouseTracker">Mouse App</a>
       <a href="/music">Music App</a>
+      <a href="/movie">Movie App</a>
     </main>
   );
 }
