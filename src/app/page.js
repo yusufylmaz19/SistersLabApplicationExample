@@ -14,6 +14,7 @@ export default function Home() {
       <a href="/useEffect/mouseTracker">Mouse App</a>
       <a href="/music">Music App</a>
       <a href="/movie">Movie App</a>
+      <a href="/formik">Formik Example</a>
     </main>
   );
 }
