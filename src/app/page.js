@@ -15,6 +15,7 @@ export default function Home() {
       <a href="/music">Music App</a>
       <a href="/movie">Movie App</a>
       <a href="/formik">Formik Example</a>
+      <a href="/hangman">Hangman Game</a>
     </main>
   );
 }
