@@ -1,9 +1,30 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "./store/slices/counterSlice";
 
 export default function Home() {
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
   return (
     <main className={styles.main}>
+      <div>
+        <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
+        >
+          Increment
+        </button>
+        <span>{count}</span>
+        <button
+          aria-label="Decrement value"
+          onClick={() => dispatch(decrement())}
+        >
+          Decrement
+        </button>
+      </div>
       <a href="/useState">useState Example</a>
       <a href="/burger">Burger App</a>
       <a href="/useMemo">useMemo App</a>
