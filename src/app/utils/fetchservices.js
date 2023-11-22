@@ -18,3 +18,13 @@ export const fetchCasts = async (name) => {
     console.error(error);
   }
 };
+
+export const fetchAllPosts = async () => {
+  try {
+    const req = await fetch("/api/posts");
+    const res = req.json();
+    return res;
+  } catch (error) {
+    console.error(error);
+  }
+};
